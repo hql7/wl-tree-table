@@ -70,6 +70,11 @@ export default {
     },
     evalFunc: Function,
     evalArgs: Array,
+    expandAll: {
+      type: Boolean,
+      default: false
+    },
+    // nodekey,children
     options: {
       type: Object,
       default: () => {
@@ -78,10 +83,6 @@ export default {
           children: "children"
         }
       }
-    },
-    expandAll: {
-      type: Boolean,
-      default: false
     },
     // 显示复选框
     checkBox: {

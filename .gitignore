@@ -16,7 +16,6 @@ bin-release/
 .DS_Store
 
 node_modules/
-
 npm/node_modules/
 lib
 /reports/
