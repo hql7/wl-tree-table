@@ -3,9 +3,9 @@
 ## 简介
 
 el-tree-table组件基于vue和element-ui，在vue-element-admin(https://github.com/PanJiaChen/vue-element-admin/tree/master/src/components/TreeTable)的实现基础上增加一些新特性。
->主要包括：显示边框、固定高度、显示复选框、复选框选中是否遵循父子关联、复选框禁用条件。
 并在此声明treetable的业务实现再来上述开源项目，如有冒犯，请及时联系。
 共同依据element-ui的table(http://element-cn.eleme.io/#/zh-CN/component/table)写成。
+>扩展主要包括：显示边框、固定高度、显示复选框、复选框选中是否遵循父子关联、复选框禁用条件。
 
 ### [在线访问](http://tree-transfer.zhongxiang.shop/) - [GitHub](https://github.com/hql7/el-tree-table)
 
@@ -103,48 +103,8 @@ el-tree-table组件基于vue和element-ui，在vue-element-admin(https://github.
 
 ## 文档
 1. 参数：`data` 说明：`树形数据` 类型：`Array, Object` 必填：`true` 补充：`对象或数组`
-  原始数据,要求是一个数组或者对象
-  ```javascript
-    [{
-      key1: value1,
-      key2: value2,
-      children: [{
-        key1: value1
-      },
-      {
-        key1: value1
-      }]
-    },
-    {
-      key1: value1
-    }]
-  ```
-  或者
- ```javascript
-    {
-      key1: value1,
-      key2: value2,
-      children: [{
-        key1: value1
-      },
-      {
-        key1: value1
-      }]
-    }
-  ```
 
 2. 参数：`columns` 说明：` 列属性` 类型：`Array` 必填：`false` 补充：`text: 显示在表头的文字,value: 对应data的key。treeTable将显示相应的value, width: 每列的宽度，为一个数字(可选),如果你想要每个字段都有自定义的样式或者嵌套其他组件，columns可不提供，直接像在el-table一样写即可，如果没有自定义内容，提供columns将更加的便捷方便`
-   ```javascript
-  [{
-    value:string,
-    text:string,
-    width:number
-  },{
-    value:string,
-    text:string,
-    width:number
-  }]
-  ```
 
 3. 参数：`expandAll` 说明：`是否展开全部` 类型：`Boolean` 必填：`false`
 
@@ -162,21 +122,7 @@ el-tree-table组件基于vue和element-ui，在vue-element-admin(https://github.
 
 9. 参数：`border` 说明：`显示边框` 类型：`Boolean` 必填：`false` 补充：`默认为true显示边框`
 
-10. 参数：`disabled` 说明：`当checkBox为true显示复选框时可用，判断是否禁用字段` 类型：`String` 补充：`此参数传入内容为：data中表示复选框是否禁用的数据字段`
-  ```javascript
-   data: [{
-      key1: value1,
-      isDisabled: true, 
-      children: [{
-        key1: value1
-      },
-      {
-        key1: value1
-      }]
-    }]
-
-    disabled: 'isDisabled'
-  ```
+10. 参数：`disabled` 说明：`当checkBox为true显示复选框时可用，判断是否禁用字段` 类型：`String` 补充：`此参数传入内容为：data中表示复选框是否禁用的数据字段 例{isDisabled: true, id: 1, children:[]}，则disabled: 'isDisabled'`
 
 11. 参数：`parentChild` 说明：`当checkBox为true显示复选框时可用，表示是否遵循父子关联` 类型：`Boolean` 补充：`默认false`
 
