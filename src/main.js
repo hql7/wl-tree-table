@@ -1,13 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
-import 'element-ui/lib/theme-chalk/index.css';
-import { Table, TableColumn } from 'element-ui';
-Vue.use(Table);
-Vue.use(TableColumn);
+import './plugins/element.js'
 
-// 导入组件库
-import TreeTable from './components/index'
-// 注册组件库
+// import TreeTable from './components/index'
+import TreeTable from '@weilan/el-tree-table'
+
 Vue.use(TreeTable)
 
 Vue.config.productionTip = false

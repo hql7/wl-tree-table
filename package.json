@@ -1,36 +1,37 @@
 {
-  "name": "el-tree-table",
-  "version": "0.1.0",
-  "description": "a tree table based on vue and element-ui，一个基于vue和element-ui的树形表格",
-  "main": "lib/eltreetable.umd.min.js",
-  "keyword": "treeTable tree table vue elementUi",
+  "name": "@weilan/el-tree-table",
+  "version": "0.1.3",
   "private": false,
+  "author": "weilan",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hql7/el-tree-table/issues"
+  },
+  "homepage": "https://github.com/hql7/el-tree-table#readme",
+  "keyword": "treeTable tree table vue elementUi",
+  "main": "lib/eltreetable.umd.min.js",
+  "description": "a tree table based on vue and element-ui，一个基于vue和element-ui的树形表格",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lib": "vue-cli-service build --target lib --name eltreetable --dest lib src/components/index.js",
     "lint": "vue-cli-service lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hql7/el-tree-table.git"
-  },
-  "author": "weilan",
   "dependencies": {
+    "element-ui": "^2.4.5",
     "vue": "^2.5.21"
   },
-  "bugs": {
-    "url": "https://github.com/hql7/el-tree-table/issues"
-  },
-  "homepage": "https://github.com/hql7/el-tree-table#readme",
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",
     "@vue/cli-plugin-eslint": "^3.3.0",
     "@vue/cli-service": "^3.3.0",
     "babel-eslint": "^10.0.1",
+    "babel-plugin-component": "^1.1.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-element": "^1.0.1",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {

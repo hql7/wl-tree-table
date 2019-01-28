@@ -2,22 +2,27 @@
 
 ## 简介
 
-el-tree-table组件基于vue和element-ui，在vue-element-admin(https://github.com/PanJiaChen/vue-element-admin/tree/master/src/components/TreeTable)的实现基础上增加一些新特性。
+el-tree-table组件基于vue和element-ui，在
+[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin/tree/master/src/components/TreeTable)
+的实现基础上增加一些新特性。
 并在此声明treetable的业务实现再来上述开源项目，如有冒犯，请及时联系。
-共同依据element-ui的table(http://element-cn.eleme.io/#/zh-CN/component/table)写成。
+共同依据element-ui的[el-table](http://element-cn.eleme.io/#/zh-CN/component/table)写成。
 >扩展主要包括：显示边框、固定高度、显示复选框、复选框选中是否遵循父子关联、复选框禁用条件。
 
-### [在线访问](http://tree-transfer.zhongxiang.shop/) - [GitHub](https://github.com/hql7/el-tree-table)
+### [在线访问](http://eltreetable.zhongxiang.shop/) - [GitHub](https://github.com/hql7/el-tree-table)
+
+#### 这里有一个兄弟组件-树形穿梭框：[在线访问](http://tree-transfer.zhongxiang.shop/) - [GitHub](https://github.com/hql7/tree-transfer)
 
 ## 快速上手
 
-`npm install el-tree-table --save`
+`npm i @weilan/el-tree-table --save`
 
 或
 
-`npm i el-tree-table -S`
+`npm i @weilan/el-tree-table -S`
 
-`import TreeTable from 'el-tree-table'`
+`import TreeTable from '@weilan/el-tree-table'`
+
 `Vue.use(TreeTable)`
 
 > 示例

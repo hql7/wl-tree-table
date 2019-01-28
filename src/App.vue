@@ -1,20 +1,30 @@
 <template>
   <div id="app" class="example">
     <h3 class="mg-bt">
-      <a href="https://github.com/hql7/tree-transfer" target="_block">GitHub</a>
-      <a href="https://www.npmjs.com/package/el-tree-transfer" target="_block">NPM</a>
-      <a href="https://segmentfault.com/a/1190000015553081" target="_block">SegmentFault</a>
+      <a href="https://github.com/hql7/el-tree-table" target="_block">GitHub</a>
+      -
+      <a href="https://www.npmjs.com/package/@weilan/el-tree-table" target="_block">NPM</a>
+      <!-- <a href="https://segmentfault.com/a/1190000015553081" target="_block">SegmentFault</a>
       <a href="https://blog.csdn.net/qq_15390381/article/details/80943549" target="_block">CSDN</a>
-      <a href="https://juejin.im/post/5b3ecae8e51d4519213fae4b" target="_block">掘金</a>
+      <a href="https://juejin.im/post/5b3ecae8e51d4519213fae4b" target="_block">掘金</a> -->
+      
     </h3>
+    
     <treeTable :data="tree_table" :columns="columns" 
     checkBox expandAll parentChild border :options="{key:'id', children:'Children'}"
     @treeTableSelect="getTreeTableSelect" />
+    <p>
+      这里有一个兄弟组件-树形穿梭框：
+      <a href="https://github.com/hql7/tree-transfer" target="_block">GitHub</a>
+      -
+      <a href="https://www.npmjs.com/package/el-tree-transfer" target="_block">NPM</a>
+      -
+      <a href="https://segmentfault.com/a/1190000015553081" target="_block">SegmentFault</a>
+    </p>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'app',
   data(){
@@ -79,7 +89,7 @@ export default {
   },
   methods: {
     getTreeTableSelect(val){
-      console.log(val);
+      console.log(val)
     }
   },
 }
@@ -89,7 +99,6 @@ export default {
 .example {
   padding: 60px;
 }
-
 .mg-bt{
   margin-bottom: 20px;
 }
