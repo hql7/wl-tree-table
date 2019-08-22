@@ -9,9 +9,9 @@ el-tree-table组件基于vue和element-ui，在
 共同依据element-ui的[el-table](http://element-cn.eleme.io/#/zh-CN/component/table)写成。
 >扩展主要包括：显示边框、固定高度、显示复选框、复选框选中是否遵循父子关联、复选框禁用条件。
 
-### [在线访问](http://eltreetable.zhongxiang.shop/) - [GitHub](https://github.com/hql7/el-tree-table)
+### [在线访问](https://hql7.github.io/) - [GitHub](https://github.com/hql7/el-tree-table)
 
-#### 这里有一个兄弟组件-树形穿梭框：[在线访问](http://tree-transfer.zhongxiang.shop/) - [GitHub](https://github.com/hql7/tree-transfer)
+#### 这里有一个兄弟组件-树形穿梭框：[在线访问](https://hql7.github.io/) - [GitHub](https://github.com/hql7/tree-transfer)
 
 ## 快速上手
 
@@ -131,7 +131,7 @@ el-tree-table组件基于vue和element-ui，在
 
 11. 参数：`parentChild` 说明：`当checkBox为true显示复选框时可用，表示是否遵循父子关联` 类型：`Boolean` 补充：`默认false`
 
-12. 事件：`openChildren` 说明：`点击图标展开子元素事件` 回调：`function(row), 返回点击行`
+12. 事件：`openChildren` 说明：`点击图标展开子元素事件` 回调：`function(row, status), 返回点击行Object, 展开状态Boolean`
 
 13. 事件：`treeTableClick` 说明：`点击列表行事件` 回调：`function(row), 返回点击行，注意：重复点击则取消选中并返回{}`
  
