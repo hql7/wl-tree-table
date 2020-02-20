@@ -237,7 +237,7 @@ export default {
             item[this.options.children].length == 0
           )
             continue;
-          item.Children.forEach(i => {
+          item[this.options.children].forEach(i => {
             this.$refs["tree-table"].toggleRowSelection(i, true);
           });
         }
