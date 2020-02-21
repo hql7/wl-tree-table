@@ -1,8 +1,7 @@
 .DS_Store
 node_modules
 /dist
-public/
-src/
+/lib
 babel.config.js
 package-lock.json
 

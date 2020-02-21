@@ -34,4 +34,4 @@ function regDeepParents(row, parent, cb) {
     }
 }
 
-export { valInDeep, flattenDeep, flattenDeepParents, regDeepParents, deepClone }
+export { valInDeep, flattenDeep, flattenDeepParents, regDeepParents }
